@@ -22,9 +22,6 @@ h3{
     margin: 0px;
 }
 
-a{
-    text-decoration: none;
-}
 
 
 /*n Navigation elements */
@@ -68,70 +65,15 @@ a{
 
 /* main */
 
-/*grid*/
-.mgrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    margin: 8%;
-    margin-top: 4%;
-    max-width: 100%;
-    /*border:#353130 solid 1px;*/
-    position: relative;
-    min-height: 1000px;
-    max-height: 50%;
-}
-
-.mgrid div{
-    margin: 0;
-    padding: 0;
-    min-width: 20%;
-    /*border: #353130 solid 1px;*/
-}
-
-.mgrid img{
-    object-fit: contain;
-    max-width: 100%;
-    /*border: #bf754b solid 1px;*/
-}
-
-.mgrid a{
-    text-decoration: none;
-}
-
-.mgrid h2{
-    color: #353130;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    font-size: 2.5rem;
-    padding: 0px;
-    margin: 20px;
-    margin-left: 0px;
-}
-
-.mgrid h2:hover{
-    color: #3f7373;  
-    /*text-decoration: underline dotted; */ 
-}
-
-.mgrid h2:active{
-    color: #bf754b;
-}
-/* end grid*/
-
 /* left alighted containers */
 .container-l{
-    background-color: #F5F5F5;
-    /*border:#3f7373 solid 3px;*/
+    border:#3f7373 solid 3px;
     position: relative;
     max-width: 100%;
     min-height: 600px;
     max-height: 50%;
     margin: 8%;
     margin-right: 0px;
-    margin-left: 0px;
-    padding: 1rem;
-    padding-left: 4rem;
 }
 
 .container-l img{
@@ -139,7 +81,6 @@ a{
     max-width: 60%;
     margin: 0%;
     object-fit: contain;
-    overflow: hidden;
 }
 
 .text-left-button{
@@ -169,24 +110,20 @@ a{
     text-align: left;
     font-size: 2.5rem;
     padding: 0px;
-    margin: 20px;
+    margin: 20px;;
     margin-left: 0px;
 }
 
 
 /* right alighted containers */
 .container-r{
-    background-color: #F5F5F5;
-    /*border:#3f7373 solid 3px;*/
+    border:#3f7373 solid 3px;
     position: relative;
     max-width: 100%;
     min-height: 600px;
     max-height: 50%;
     margin: 8%;
     margin-left: 0px;
-    margin-right: 0px;
-    padding: 1rem;
-    padding-right: 4rem;
 }
 
 .container-r img{
@@ -194,7 +131,6 @@ a{
     max-width: 60%;
     margin: 0%;
     object-fit: contain;
-    overflow: hidden;
 }
 
 .text-right-button{
@@ -217,7 +153,6 @@ a{
     right: 0;
 }
 
-
 .text-right-button h2{
     color: #353130;
     font-family: Arial, Helvetica, sans-serif;
@@ -226,10 +161,55 @@ a{
     padding: 0px;
     margin: 20px;;
     margin-right: 0px;
+} 
+
+.container-right{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 8%;
+    margin-right: 0%;
+    max-width: 100%;
+    border:#cc1078 solid 2px;
+    position: relative;
+    min-height: 600px;
+    max-height: 50%;
+}
+
+.container-right img{
+    float: right;
+    position: relative;
+    right: 0;
+    max-width: 60%;
+    margin: 0%;
+    object-fit: contain;
 }
 
 
-.container-test{
+.container-right h2{
+    float: left;
+    max-width: 25%;
+    margin-top: 45%;
+    margin-bottom: 1rem;
+    padding-left: 0px;
+    color: #353130;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.container-right button{
+    position: absolute;
+    width: 330px;
+    height: 60px;
+    padding: 1rem;
+    margin-left: 0;
+    left: 0;
+    top: 50%;
+    
+}
+
+
+.container-left{
     display: grid;
     grid-template-columns: auto auto;
     margin: 8%;
@@ -241,7 +221,7 @@ a{
     max-height: 50%;
 }
 
-.container-test img{
+.container-left img{
     float: left;
     max-width: 60%;
     margin: 0%;

@@ -1,0 +1,128 @@
+*{
+    /*background-color: #FCFCFC; */
+    scroll-behavior: smooth;
+}
+
+h1{
+    color: #353130;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 1rem;
+    margin-right: 4%;
+    
+}
+
+h3{
+    color: #353130;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+/*n Navigation elements */
+/* thanks to bro code: https://www.youtube.com/watch?v=f3uCSh6LIY0 */
+.nav{
+    /*margin-left:20%;*/
+    margin-right: 4%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.nav ul{
+    /* background-color: cadetblue; */
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.nav li{
+    margin-left: 4rem;
+    float: right;
+}
+
+.nav a{
+    text-decoration: none;
+    display: block;
+}
+
+.nav h3:hover{
+    color: #3f7373;   
+    /*background-color: rgb(160, 137, 95);   used for checking  */
+    text-decoration: underline dotted;   
+}
+
+.nav h3:active{
+    /*background-color: rgb(160, 137, 95);   used for checking  */
+    text-decoration: underline solid;   
+}
+
+/* footer's class */
+/*.fdiv{
+    position: absolute;
+    border: #353130 solid 3px;
+    max-width: 100%;
+    height: auto;
+}*/
+
+.frec{
+    z-index: 20;
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    margin: 4%;
+    background-color: #0e1111;
+    width: 20%; 
+    height: 20%;
+    max-height: 120px;  
+}
+
+.frec ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.frec a{
+    text-decoration: none;
+}
+
+.frec p{
+    color: #FCFCFC;
+    background-color: #0e1111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0px; 
+    margin-left: 1rem;
+
+}
+
+.frec p:hover{
+    color:#3f7373;
+    text-decoration: underline dotted;
+}
+
+/* https://www.w3schools.com/css/css_link.asp */
+.frec p:active{
+    color: #bf754b;
+    text-decoration: underline solid;
+}
+
+.frec p:visited{
+    color: #bf754b;
+    text-decoration: underline solid;
+}
+
+.fimg{
+    position: absolute;
+    object-fit: contain;
+    bottom: 0px;
+    max-width: 100%; 
+    z-index: 2;
+}
