@@ -13,6 +13,10 @@ h1{
     margin-right: 4%;
     
 }
+ /*https://www.geeksforgeeks.org/how-to-add-onclick-effect-using-css/*/
+h1:hover{
+    transform: scale(1.05);
+}
 
 h3{
     color: #353130;
