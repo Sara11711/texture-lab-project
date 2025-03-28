@@ -1,24 +1,38 @@
+
+
 *{
     /*background-color: #FCFCFC; */
     scroll-behavior: smooth;
 }
+@font-face {
+    font-family: 'Canarina-Regular';
+    src: url('/fonts/Canarina-Regular.woff') ;
+}
 
-h1{
+
+@font-face {
+    font-family: 'Pilowlava-Regular';
+    src: url('/fonts/Pilowlava-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: "Pilowlava-Regular";
     color: #353130;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 6rem;
+    font-size: 5.3rem;
     text-transform: uppercase;
     text-align: right;
     margin: 1rem;
-    margin-right: 4%;
-    
+    margin-right: 4%;  
 }
  /*https://www.geeksforgeeks.org/how-to-add-onclick-effect-using-css/*/
 h1:hover{
     transform: scale(1.01);
 }
 
-h2{
+h2 {
     color: #353130;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
@@ -27,7 +41,7 @@ h2{
 }
 
 
-h3{
+h3 {
     color: #353130;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
@@ -45,6 +59,7 @@ button{
     min-width: 300px;
     max-width: 35%;
     padding: 1rem;
+    margin-bottom: 20%;
 }
 
 
@@ -162,14 +177,109 @@ button{
 .container-flex div{
     /*border:#cc1078 solid 2px;*/
     max-height: 20%;
-    margin: 1rem;
     margin-left:10%;
     object-fit: cover;
+    padding-top: 0%;
 }
+
+.container-flex div img{
+    width: 100%;
+}
+
 
 .rev{
     flex-direction: row;
 }
+
+.grid-lab{
+    display: grid;
+    height: auto;
+    margin-top: 4%;
+    gap: 20px;
+    /* background-color: #2b76cb;*/
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+/*.grid-lab div{
+    background-color: #F5F5F5;
+    border: #0e1111 solid 2px;
+    min-height: 20%;
+}*/
+.item-lab1{
+    /*border: #0e1111 solid 2px;*/
+    height: auto;
+    padding: 0px;
+    padding-left: 2%;
+}
+.item-lab1 h2{
+    margin-bottom: 0px;
+}
+.item-lab2{
+    background-color: #F5F5F5;
+    /*border: #0e1111 solid 2px;*/
+    min-height: Auto; 
+}
+.item-lab3{
+    /*border: #0e1111 solid 2px;*/
+    height: auto; 
+    align-content: center;
+}
+.item-lab3 button{
+    position: absolute;
+    left: 43%;
+}
+
+.flex-lab-inside{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-wrap: nowrap ;
+}
+.flex-lab-inside div{
+    max-width: 33%;
+    margin: 2%;
+}
+.flex-lab-inside img{
+    width:100%
+}
+
+
+
+.container-flex-lab{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 8%;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 100%;
+    border:#cc1078 solid 2px;
+    padding: 1rem;
+    min-height: 400px;
+    max-height: 50%;
+}
+
+.container-flex-lab div{
+    border:#cc1078 solid 2px;
+    margin: 2%;
+    max-height: 20%;
+    object-fit: cover;
+    
+}
+
+.container-flex-lab div img{
+    width: 100%;
+}
+
+.container-flex-lab div button{
+    width:300px;
+}
+
+
 
 /* footer's class */
 
@@ -278,11 +388,10 @@ button{
     }
     .frec p{
         font-size: 1rem;
-        padding: 0.5rem;
+        padding: 1rem;
         margin: 0px; 
-        margin-left: 0.5rem;
+        margin-left: 1rem;
     }
-    
 
 }
 
