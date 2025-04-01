@@ -1,79 +1,117 @@
-
-
 *{
     /*background-color: #FCFCFC; */
     scroll-behavior: smooth;
 }
-@font-face {
-    font-family: 'Canarina-Regular';
-    src: url('/fonts/Canarina-Regular.woff') ;
-}
-
 
 @font-face {
-    font-family: 'Pilowlava-Regular';
-    src: url('/fonts/Pilowlava-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'alumni-sans';
+    src: url('/fonts/alumni-sans.woff2') format('woff2');
     font-style: normal;
+    font-weight: normal;
 }
 
+@font-face {
+    font-family: 'chelsea-market';
+    src: url('/fonts/chelsea-market.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'road-rage';
+    src: url('/fonts/road-rage.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ysabeau-infant';
+    src: url('/fonts/ysabeau-infant.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
 
 h1 {
-    font-family: "Pilowlava-Regular";
+    font-family: "chelsea-market";
+    background-color: transparent;
     color: #353130;
-    font-size: 5.3rem;
+    font-size: 8rem;
     text-transform: uppercase;
     text-align: right;
-    margin: 1rem;
-    margin-right: 4%;  
+    margin: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-right: 5%;  
 }
+
  /*https://www.geeksforgeeks.org/how-to-add-onclick-effect-using-css/*/
-h1:hover{
+h1:hover {
     transform: scale(1.01);
 }
 
 h2 {
     color: #353130;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "alumni-sans";
+    background-color: transparent;
     text-align: left;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 0px;
+    margin: 20px;
+    margin-left: 0px;
 }
 
 
 h3 {
     color: #353130;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
+    background-color: transparent;
+    font-family: "alumni-sans";
+    font-size: 2.3rem;
     padding: 0px;
     margin: 0px;
 }
 
-a{
-    text-decoration: none;
+p {
+    color: #353130;
+    background-color: transparent;
+    font-family: "ysabeau-infant";
+    line-height: 1.8;
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
 }
+
+
 
 button{
     position: absolute;
     height: 60px;
     min-width: 300px;
     max-width: 35%;
-    padding: 1rem;
+    padding: 5px;
     margin-bottom: 20%;
 }
 
+.input-field {
+    height: 45px;
+    width:100%;
+    border: #605C5A solid 2px;
+    margin-bottom: 4%;
+}
 
 /*n Navigation elements */
+
 /* thanks to bro code: https://www.youtube.com/watch?v=f3uCSh6LIY0 */
+
 .nav{
-    /*margin-left:20%;*/
-    margin-right: 4%;
+    margin-right: 6%;
     text-transform: uppercase;
     text-align: right;
 }
 
 .nav ul{
-    /* background-color: cadetblue; */
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -81,25 +119,23 @@ button{
 }
 
 .nav li{
-    margin-left: 4rem;
+    margin-left: 5.8rem;
     float: right;
 }
 
 .nav a{
-    text-decoration: none;
     display: block;
 }
 
 .nav h3:hover{
     color: #3f7373;   
-    /*background-color: rgb(160, 137, 95);   used for checking  */
     text-decoration: underline dotted;   
 }
 
 .nav h3:active{
-    /*background-color: rgb(160, 137, 95);   used for checking  */
     text-decoration: underline solid;   
 }
+
 
 
 /* main */
@@ -139,7 +175,7 @@ button{
 
 .mgrid h2{
     color: #353130;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "alumni-sans";
     text-align: left;
     font-size: 3rem;
     padding: 0px;
@@ -283,14 +319,14 @@ button{
 
 /* footer's class */
 
-.fdiv{
+.fdiv {
     position: relative;
     /*border: #353130 solid 3px; */
     max-width: 100%;
     height: auto;
 }
 
-.frec{
+.frec {
     z-index: 20;
     position: absolute;
     padding: 1rem;
@@ -303,20 +339,20 @@ button{
     margin: 3%;
 }
 
-.frec ul{
+.frec ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.frec a{
+.frec a {
     text-decoration: none;
 }
 
-.frec p{
+.frec p {
     color: #FCFCFC;
     background-color: #0e1111;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"alumni-sans";
     font-size: 2rem;
     padding: 1rem;
     margin: 0px; 
@@ -357,6 +393,8 @@ button{
         font-size: 2rem;
     }
 }
+
+
 @media(max-width: 768px){
     h1{
         font-size: 4.5rem;

@@ -1,0 +1,114 @@
+*{
+    /*background-color: #FCFCFC; */
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'alumni-sans';
+    src: url('/fonts/alumni-sans.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'chelsea-market';
+    src: url('/fonts/chelsea-market.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'road-rage';
+    src: url('/fonts/road-rage.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ysabeau-infant';
+    src: url('/fonts/ysabeau-infant.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "chelsea-market";
+    background-color: none;
+    color: #353130;
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-right: 5%;  
+}
+
+ /*https://www.geeksforgeeks.org/how-to-add-onclick-effect-using-css/*/
+h1:hover {
+    transform: scale(1.01);
+}
+
+
+
+h3 {
+    color: #353130;
+    background-color: none;
+    font-family: "alumni-sans";
+    font-size: 2.3rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+button {
+    position: absolute;
+    background-image: url(image\buttons\button-01.svg);
+    height: 60px;
+    min-width: 300px;
+    max-width: 35%;
+    padding: 1rem;
+    margin-bottom: 20%;
+}
+
+/*n Navigation elements */
+
+/* thanks to bro code: https://www.youtube.com/watch?v=f3uCSh6LIY0 */
+
+.nav{
+    margin-right: 6%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.nav li{
+    margin-left: 5.8rem;
+    float: right;
+}
+
+.nav a{
+    display: block;
+}
+
+.nav h3:hover{
+    color: #3f7373;   
+    text-decoration: underline dotted;   
+}
+
+.nav h3:active{
+    text-decoration: underline solid;   
+}

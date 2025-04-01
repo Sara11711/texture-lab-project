@@ -23,10 +23,50 @@
     </nav>
     <main>
 
+        <div class="container-flex">
+            <div style="width: 65%; margin-left: 0px; ">
+                <img src="image\de-index-ratio.jpg" alt="">
+            </div>
+            <div style="width: 35%; margin-right:10%;">
+                <h2 style="margin-top: 5%;"> Contact Us </h2>
+
+                <!-- https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/-->
+                <form action="https://getform.io/f/bkkyxmrb" method="POST">
+                    <h3>Full Name</h3>
+                    <input type="text" name="name" class="input-field">
+
+                    <h3>Email</h3>
+                    <input type="email" name="email" class="input-field">
+
+                    <h3>Message</h3>
+                    <input type="text" name="message" class="input-field">
+                    <br>
+
+                    <!-- add hidden Honeypot input to prevent spams -->
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+                    
+                    <button type="submit">Send</button>
+                </form>
+              
+            </div>
+        </div>
+
+
     </main>
     <footer>
-
+        <div class="fdiv">
+            <div class="frec">
+                <ul>
+                    <li><a href="aboutus.html"><p>About Us</p></a></li>
+                    <li><a href="contactus.html"><p>Contact Us</p></a></li>
+                    <li><a href="faq.html"><p>FAQ</p></a></li>
+                
+                </ul>
+            </div>
+            <img src="image\Footer Alt 01.jpg" alt="" class="fimg">
+        </div>
     </footer>
+    
     
 </body>
 </html>
