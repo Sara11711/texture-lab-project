@@ -78,7 +78,7 @@ p {
     background-color: transparent;
     font-family: "ysabeau-infant";
     line-height: 1.8;
-    font-size: 2rem;
+    font-size: 1.25rem;
     padding: 0px;
     margin: 0px;
 }
@@ -94,12 +94,64 @@ button{
     margin-bottom: 20%;
 }
 
+.div-button {
+    position: absolute;
+    /*border: #353130 solid 1px;*/
+    height: 60px;
+    width: 250px;
+    left: 10px;
+    
+}
+
+.div-button img{
+    z-index: 1;
+    object-fit: fill;
+    width: 100%;
+}
+
+.div-button img:hover {
+    transform: scale(1.01);
+}
+
+.div-button a{
+    position:absolute;
+    top: 5px;
+    left: 70px;
+    z-index: 4;
+}
+
+.div-button h3{
+    color: #FCFCFC;
+    font-size: 2rem;
+}
+
+.div-button h3:hover{
+    color: #EAD1C3;
+}
+
 .input-field {
     height: 45px;
     width:100%;
-    border: #605C5A solid 2px;
+    border: #BFD0D0 solid 2px;
+    border-radius: 7px;
     margin-bottom: 4%;
 }
+
+.input-field input:focus {
+    border: 3px solid #3F7373;
+}
+
+input[type=text] :focus {
+    border: 3px solid #3F7373;
+}
+
+
+.input-field-h3 {
+    font-size: 1.8rem;
+    color: #605C5A; 
+}
+
+
 
 /*n Navigation elements */
 
