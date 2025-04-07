@@ -6,21 +6,21 @@
 
 @font-face {
     font-family: 'alumni-sans';
-    src: url('/fonts/alumni-sans.woff2') format('woff2');
+    src: url('fonts/alumni-sans.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'chelsea-market';
-    src: url('/fonts/chelsea-market.woff2') format('woff2');
+    src: url('fonts/chelsea-market.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'ysabeau-infant';
-    src: url('/fonts/ysabeau-infant.woff2') format('woff2');
+    src: url('fonts/ysabeau-infant.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
