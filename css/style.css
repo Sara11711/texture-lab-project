@@ -3,6 +3,13 @@
     scroll-behavior: smooth;
 }
 
+.chelsea-market-regular {
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 @font-face {
     font-family: 'alumni-sans';
     src: url('/fonts/alumni-sans.woff2') format('woff2');
@@ -68,10 +75,12 @@ h3 {
 
 p {
     color: #353130;
+    text-transform: none;
     background-color: transparent;
     font-family: "ysabeau-infant";
-    line-height: 1.8;
-    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.6;
+    font-size: 1.3rem;
     padding: 0px;
     margin: 0px;
 }
@@ -271,25 +280,9 @@ input[type=text] :focus {
     transform: scale(1.01);
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .ar-column {
-      flex: 40%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .ar-column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
 
 /* https://www.w3schools.com/css/css3_flexbox_container.asp */
-.container-flex{
+.container-flex {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: row;
@@ -409,7 +402,62 @@ input[type=text] :focus {
     width:300px;
 }
 
+.tut-top {
+    position: relative;
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
 
+.tut-top img {
+    width: 100%;
+    display: block;
+}
+
+.tut-top h2{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    color: #353130;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-flex-tut {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 8%;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 100%;
+    border:#cc1078 solid 2px;
+    padding: 1rem;
+    min-height: 400px;
+    max-height: 30%;
+}
+
+.container-flex-tut div{
+    border:#cc1078 solid 2px;
+    vertical-align: middle;
+    max-height: 20%;
+    margin-left:10%;
+    padding-top: 0%;
+}
+
+.container-flex-tut img {
+    vertical-align: middle;
+    width: 100%;
+}
+.container-flex-tut div h1 {
+    text-align: left;
+    margin-left: 2%;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+}
 
 /* footer's class */
 
@@ -426,11 +474,12 @@ input[type=text] :focus {
     padding: 1rem;
     bottom: 0;
     margin: 0%; 
-    background-color: #0e1111;
+    background-color: #3f7373;
     width: 20%;
     height: 70%; 
     max-height: 70%;
     margin: 3%;
+    opacity: 80%;
 }
 
 .frec ul {
@@ -455,17 +504,12 @@ input[type=text] :focus {
 }
 
 .frec p:hover{
-    color:#3f7373;
+    color:#EAD1C3;
     text-decoration: underline dotted;
 }
 
 /* https://www.w3schools.com/css/css_link.asp */
 .frec p:active{
-    color: #bf754b;
-    text-decoration: underline solid;
-}
-
-.frec p:visited{
     color: #bf754b;
     text-decoration: underline solid;
 }
@@ -479,14 +523,22 @@ input[type=text] :focus {
 }
 
 
+/* Responsive */
+
 /* https://www.w3schools.com/icons/default.asp */
 
 
 /* https://www.youtube.com/watch?v=qTddGwg2ht0 */
 
-/* @media(max-width: 600px){
-    h1{
-        font-size: 2rem;
+/*@media screen and (max-width: 600px){
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.2rem;
     }
     p {
         color: #353130;
@@ -497,6 +549,12 @@ input[type=text] :focus {
         padding: 0px;
         margin: 0px;
     }
+
+    .ar-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
     .frec {
         vertical-align: auto;
         padding: 5px;
@@ -511,10 +569,10 @@ input[type=text] :focus {
         margin-left: .2rem;
     }
 
-} */
+} 
 
 
-@media(max-width: 800px){
+@media screen and (max-width: 800px) and (min-width: 601px){
     h1{
         font-size: 3.3rem;
     }
@@ -537,12 +595,15 @@ input[type=text] :focus {
         padding: .5rem;
     }
     .container-flex{
-        /*flex-direction: column;*/
+        /*flex-direction: column;
         flex-wrap: wrap;
         flex: 100%;
         justify-content: center;
         margin: 2%;
-    
+    }
+    .ar-column {
+        flex: 40%;
+        max-width: 50%;
     }
     .frec {
         vertical-align: auto;
@@ -560,7 +621,7 @@ input[type=text] :focus {
 
 }
 
-/*@media(min-width: 801px){
+@media screen and (max-width: 1200px) and (min-width: 801px){
     h1{
         font-size: 3rem;
     }
@@ -583,7 +644,7 @@ input[type=text] :focus {
         padding: .5rem;
     }
    .container-flex{
-        /*flex-direction: column;
+        flex-direction: column;
         flex-wrap: wrap;
         flex: 100%;
         justify-content: center;
