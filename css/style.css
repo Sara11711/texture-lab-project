@@ -547,10 +547,13 @@ input[type=text] :focus {
         font-size: 2.2rem;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+    }
+    .mgrid h2{
+        font-size: 1.1rem;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     p {
         color: #353130;
@@ -589,7 +592,7 @@ input[type=text] :focus {
         font-size: 2.5rem;
     }
     h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     h3{
@@ -599,7 +602,7 @@ input[type=text] :focus {
         margin-left: 1.5rem;
     }
     .mgrid h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     button{
         height: 43px;
