@@ -285,6 +285,26 @@ input[type=text] :focus {
 
 
 /* https://www.w3schools.com/css/css3_flexbox_container.asp */
+
+#container-flex-intro {
+    background-color: #BFD0D0; 
+    position: relative;
+    margin: Auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    max-width: 70%;
+    border-radius: 8px;
+    /*border:#cc1078 solid 2px;*/
+    padding: 1rem;
+    min-height: 150px;
+    max-height: 30%;
+}
+
+#container-flex-intro p {
+    text-align: center;
+    column-width: 50%;
+}
+
 .container-flex {
     background-color: #F5F5F5;
     display: flex;
@@ -560,7 +580,7 @@ input[type=text] :focus {
         background-color: transparent;
         font-family: "ysabeau-infant";
         line-height: 1.8;
-        font-size: 0.75rem;
+        font-size: 0.5rem;
         padding: 0px;
         margin: 0px;
     }
@@ -597,6 +617,16 @@ input[type=text] :focus {
     }
     h3{
         font-size: 1rem;
+    }
+
+    p {
+        color: #353130;
+        background-color: transparent;
+        font-family: "ysabeau-infant";
+        line-height: 1.8;
+        font-size: 0.85rem;
+        padding: 0px;
+        margin: 0px;
     }
     .nav li{
         margin-left: 1.5rem;
@@ -646,6 +676,16 @@ input[type=text] :focus {
     }
     h3{
         font-size: 1.25rem;
+    }
+
+    p {
+        color: #353130;
+        background-color: transparent;
+        font-family: "ysabeau-infant";
+        line-height: 1.8;
+        font-size: 1.2rem;
+        padding: 0px;
+        margin: 0px;
     }
     .nav li{
         margin-left: 1.5rem;
