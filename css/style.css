@@ -219,6 +219,11 @@ input[type=text] :focus {
     /*border: #bf754b solid 1px;*/
 }
 
+/* https://www.w3schools.com/cssref/css3_pr_filter.php */
+.mgrid img:hover{
+    filter: grayscale(100%);
+}
+
 .mgrid a{
     text-decoration: none;
 }
@@ -273,6 +278,10 @@ input[type=text] :focus {
 .ar-column img:hover {
     transform: scale(1.01);
 }
+.ar-column p:hover {
+    transform: scale(1.01);
+}
+
 
 
 /* https://www.w3schools.com/css/css3_flexbox_container.asp */
@@ -399,8 +408,8 @@ input[type=text] :focus {
 .tut-top {
     position: relative;
     width: 100%;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .tut-top img {
@@ -428,14 +437,14 @@ input[type=text] :focus {
     margin-left: 0%;
     margin-right: 0%;
     max-width: 100%;
-    border:#cc1078 solid 2px;
+    /*border:#cc1078 solid 2px;*/
     padding: 1rem;
     min-height: 400px;
     max-height: 30%;
 }
 
 .container-flex-tut div{
-    border:#cc1078 solid 2px;
+    /*border:#cc1078 solid 2px;*/
     vertical-align: middle;
     max-height: 20%;
     margin-left:10%;
@@ -452,6 +461,15 @@ input[type=text] :focus {
     margin-top: auto;
     margin-bottom: 0.5rem;
 }
+
+.container-flex-tut div h1:hover {
+    transform: none;
+}
+
+
+
+
+
 
 /* footer's class */
 
@@ -524,7 +542,7 @@ input[type=text] :focus {
 
 /* https://www.youtube.com/watch?v=qTddGwg2ht0 */
 
-/*@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
     h1 {
         font-size: 2.5rem;
     }
@@ -571,7 +589,7 @@ input[type=text] :focus {
         font-size: 3.3rem;
     }
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
     }
     h3{
@@ -589,7 +607,7 @@ input[type=text] :focus {
         padding: .5rem;
     }
     .container-flex{
-        /*flex-direction: column;
+        flex-direction: column;
         flex-wrap: wrap;
         flex: 100%;
         justify-content: center;
@@ -658,6 +676,6 @@ input[type=text] :focus {
         margin: 0px; 
         margin-left: .2rem;
     }
-}*/
+} */
 
 
