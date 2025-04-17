@@ -1,6 +1,8 @@
 *{
     /*background-color: #FCFCFC; */
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    /*background-image: url("image\texture-lab-03.jpg");*/
 }
 
 
@@ -81,7 +83,7 @@ p {
 
 
 
-button{
+button {
     position: absolute;
     height: 60px;
     min-width: 300px;
@@ -93,70 +95,71 @@ button{
 
 .div-button {
     position: relative;
-    margin-left: 0%;
-    /*border: #353130 solid 1px;*/
-    /*height: 60px;*/
+    margin: auto;
     max-height: 30%;
-    max-width: 250px;
-    left: 10px;
+    max-width: 300px;
 }
 
-.div-button img{
-    z-index: 1;
-    object-fit: fill;
+.div-button img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 .div-button img:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .div-button a {
-    position:absolute;
-    top: 5px;
-    left: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 4;
-}
+    width: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} 
 
-.div-button h3 {
-    color: #FCFCFC;
-    font-size: 2rem; 
-}
-.div-button h3:hover {
-    color: #EAD1C3;
-}
-
-.div-button p {
-    color: #FCFCFC;
+.div-button span {
+    font-family: "ysabeau-infant";
     font-size: 1.5rem;
+    font-weight: 600;
+    color: #FCFCFC;
+    padding: 0.3rem 0.8rem;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
 }
 
-.div-button p:hover {
+.div-button span:hover {
     color: #EAD1C3;
 }
+
 
 .input-field {
     height: 45px;
     width:100%;
-    border: #BFD0D0 solid 2px;
+    border: 2px solid #BFD0D0;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    font-family: 'ysabeau-infant';
     border-radius: 7px;
     margin-bottom: 4%;
+    background-color: white;
+    box-sizing: border-box;
 }
 
-.input-field input:focus {
-    border: 3px solid #3F7373;
+input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus {
+    border: 3px solid #3f7373;
+    outline: none;
 }
-
-input[type=text] :focus {
-    border: 3px solid #3F7373;
-}
-
 
 .input-field-h3 {
     font-size: 1.8rem;
     color: #605C5A; 
 }
-
 
 
 /*n Navigation elements */
@@ -200,63 +203,6 @@ input[type=text] :focus {
 
 /*grid*/
 
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
-.mgrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    margin: 8%;
-    margin-top: 4%;
-    max-width: 100%;
-    /*border:#353130 solid 1px;*/
-    position: relative;
-    min-height: 1000px;
-    max-height: 50%;
-}
-
-.mgrid div{
-    margin: 0;
-    padding: 0;
-    min-width: 20%;
-    /*border: #353130 solid 1px;*/
-}
-
-.mgrid img{
-    object-fit: cover;
-    max-width: 100%;
-    /*border: #bf754b solid 1px;*/
-}
-
-/* https://www.w3schools.com/cssref/css3_pr_filter.php */
-.mgrid img:hover{
-    filter: grayscale(100%);
-}
-
-.mgrid a{
-    text-decoration: none;
-}
-
-.mgrid h2{
-    color: #353130;
-    font-family: "alumni-sans";
-    text-align: left;
-    font-size: 3rem;
-    padding: 0px;
-    margin: 20px;
-    margin-left: 0px;
-}
-
-.mgrid h2:hover{
-    color: #3f7373;  
-    /*text-decoration: underline dotted; */ 
-}
-
-.mgrid h2:active{
-    color: #bf754b;
-}
-/* end grid*/
-
-
 /* Archive Grids */
 /* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp    */
 
@@ -290,10 +236,9 @@ input[type=text] :focus {
     transform: scale(1.01);
 }
 
+
 /* index grids - grid generator */
 /* https://cssgridgenerator.io/  */
-
-
 .parent {
     display: grid;
     margin: 5%;
@@ -419,12 +364,10 @@ input[type=text] :focus {
     padding-right: 20px;
 }
 
+/* end grids */        
 
-/* end grid via grid generator */        
-
-
+/* index page - flex boxes */
 /* https://www.w3schools.com/css/css3_flexbox_container.asp */
-
 #container-flex-intro {
     background-color: #F5F8F8; 
     position: relative;
@@ -444,38 +387,134 @@ input[type=text] :focus {
     column-width: 50%;
 }
 
-.container-flex {
+/*.container-flex {
     background-color: #F5F8F8;
     display: flex;
     flex-direction: row;
     position: relative;
-    margin: 8%;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin: 8% 0;
     max-width: 100%;
-    /*border:#cc1078 solid 2px;*/
+    /*border:#cc1078 solid 2px;
     padding: 1rem;
     min-height: 400px;
     max-height: 50%;
 }
 
 .container-flex div {
-    /*border:#cc1078 solid 2px;*/
+    /*border:#cc1078 solid 2px;
     max-height: 20%;
-    margin-left:10%;
+    margin-left:2%;
     object-fit: cover;
     padding-top: 0%;
 }
 
 .container-flex div img {
     width: 100%;
-}
-
-
-.rev {
+}*/
+.container-flex {
+    background-color: #F5F8F8;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4% auto;
+    max-width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .container-flex > div {
+    flex: 1 1 50%;
+    padding: 0;
+  }
+  
+  .container-flex > div img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+/* about me page */
+.about-image {
+    width: 60%;
+    margin-left: 0;
 }
 
+.about-text {
+    padding-left: 5%;
+    width: 60%;
+    margin: auto 5%;
+    vertical-align: auto;
+}
+
+/* Contact me page */
+.contact-image {
+    width: 50%;
+    margin-left: 0%;
+}
+.contact-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-form {
+    width: 35%;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.contact-form button {
+    position: static !important;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    font-family: "alumni-sans";
+    padding: 0.5rem 1rem;
+    background-color: #3f7373;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+  
+.contact-form button:hover {
+    background-color: #bf754b;
+}
+
+/* item page */
+.item-ar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+    margin: 2% 0;
+    padding: 2rem;
+    background-color: #F5F8F8;
+    gap: 2rem; 
+}
+
+.flex-ar-inside {
+    width: 55%;
+    margin: 0;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    gap: 1.2rem;
+  }
+
+/* lab page */
 .grid-lab {
     display: grid;
     height: auto;
@@ -485,11 +524,8 @@ input[type=text] :focus {
     grid-template-rows: auto auto auto;
     grid-template-columns: auto;
 }
-/*.grid-lab div{
-    background-color: #F5F8F8;
-    border: #0e1111 solid 2px;
-    min-height: 20%;
-}*/
+
+
 .item-lab1 {
     /*border: #0e1111 solid 2px;*/
     height: auto;
@@ -516,56 +552,35 @@ input[type=text] :focus {
 
 .flex-lab-inside {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 8%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    flex-wrap: nowrap ;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem 5%;
+    flex-wrap: wrap;
 }
-.flex-lab-inside div {
-    max-width: 33%;
-    margin: 2%;
+
+.lab-card {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.flex-lab-inside div:hover{
+  
+.lab-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.lab-card img:hover {
     transform: scale(1.01);
 }
-.flex-lab-inside img{
-    width:100%
-}
-
-
-
-.container-flex-lab{
-    background-color: #F5F8F8;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 8%;
-    margin-left: 0%;
-    margin-right: 0%;
-    max-width: 100%;
-    border:#cc1078 solid 2px;
-    padding: 1rem;
-    min-height: 400px;
-    max-height: 50%;
-}
-
-.container-flex-lab div{
-    border:#cc1078 solid 2px;
-    margin: 2%;
-    max-height: 20%;
-    object-fit: cover;
-    
-}
-
-.container-flex-lab div img{
+.lab-card p {
     width: 100%;
+    word-break: break-word;
 }
 
-.container-flex-lab div button{
-    width:300px;
-}
+
+
 
 .tut-top {
     position: relative;
@@ -627,7 +642,6 @@ input[type=text] :focus {
 .container-flex-tut div h1:hover {
     transform: none;
 }
-
 
 
 
@@ -706,10 +720,11 @@ input[type=text] :focus {
 
  @media screen and (max-width: 600px){
     h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
     h2 {
-        font-size: 1.1rem;
+        font-size: 2rem;
+        text-align: center;
     }
     .mgrid h2{
         font-size: 1.1rem;
@@ -717,14 +732,66 @@ input[type=text] :focus {
     h3 {
         font-size: 0.9rem;
     }
+    .input-field-h3 {
+        font-size: 0.9rem;
+    }
+    .contact-form button {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+      }
+
     p {
         color: #353130;
         background-color: transparent;
         font-family: "ysabeau-infant";
         line-height: 1.8;
-        font-size: 0.5rem;
+        font-size: 1rem;
         padding: 0px;
         margin: 0px;
+    }
+    .container-flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+        text-align: center;
+    }
+    .container-flex h2 {
+        text-align: center;
+    }
+
+    /* https://www.w3schools.com/css/css_important.asp */
+    .about-image,.about-text {
+        width: 90% !important;
+        margin: 1rem auto !important;
+        text-align: center;
+    }
+
+    .contact-image,.contact-form {
+        width: 90% !important;
+        margin: 1rem auto !important;
+        text-align: center;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-ar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .flex-ar-inside,.button-column {
+        width: 100%;
+    }
+    
+    .button-column {
+        align-items: center;
     }
 
     .ar-column {
@@ -750,22 +817,35 @@ input[type=text] :focus {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .div-button p {
-        font-size: 0.6rem;
+    .div-button span {
+        font-size: 1rem;
+    }
+    .flex-lab-inside {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-lab-inside .lab-card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .lab-card img {
+        height: 20%;
     }
 
 } 
 
 
 @media screen and (max-width: 800px) and (min-width: 601px){
-    h1{
-        font-size: 2.5rem;
+    h1 {
+        font-size: 3rem;
     }
-    h2{
-        font-size: 1.2rem;
+    h2 {
+        font-size: 2rem;
         text-align: center;
     }
-    h3{
+    h3 {
         font-size: 1rem;
     }
 
@@ -774,27 +854,62 @@ input[type=text] :focus {
         background-color: transparent;
         font-family: "ysabeau-infant";
         line-height: 1.8;
-        font-size: 0.85rem;
+        font-size: 1rem;
         padding: 0px;
         margin: 0px;
     }
-    .nav li{
+    .nav li {
         margin-left: 1.5rem;
     }
-    .mgrid h2{
+    .mgrid h2 {
         font-size: 1.2rem;
     }
-    button{
+    button {
         height: 43px;
         min-width: 215px;
         padding: .5rem;
     }
-    .container-flex{
+    .container-flex {
         flex-direction: column;
         flex-wrap: wrap;
         flex: 100%;
+        align-items: center;
         justify-content: center;
         margin: 2%;
+        text-align: center;
+    }
+    .container-flex h2 {
+        text-align: center;
+    }
+    
+    .about-image,.about-text {
+        width: 90% !important;
+        margin: 1rem auto !important;
+        text-align: center;
+    }
+    .contact-image,.contact-form {
+        width: 90% !important;
+        margin: 1rem auto !important;
+        text-align: center;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-ar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .flex-ar-inside,.button-column {
+        width: 100%;
+    }
+    
+    .button-column {
+        align-items: center;
     }
     .ar-column {
         flex: 40%;
@@ -818,22 +933,35 @@ input[type=text] :focus {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .div-button p {
-        font-size: 0.8rem;
+    .div-button span {
+        font-size: 1rem;
+    }
+    .flex-lab-inside {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-lab-inside .lab-card {
+        width: 90%;
+        max-width: 400px;
+    } 
+
+    .lab-card img {
+        height: 20%;
     }
 
 }
 
 @media screen and (max-width: 1200px) and (min-width: 801px){
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     h2{
         font-size: 2rem;
         text-align: center;
     }
     h3{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     p {
@@ -856,14 +984,38 @@ input[type=text] :focus {
         min-width: 215px;
         padding: .5rem;
     }
-   .container-flex{
+    .container-flex {
         flex-direction: column;
         flex-wrap: wrap;
         flex: 100%;
-        justify-content: center;
+        align-items: center;
         margin: 2%;
-    
+        text-align: center;
     }
+    .container-flex h2 {
+        text-align: center;
+    }
+    .about-image,.about-text {
+        width: 90% !important;
+        margin: 1rem auto !important;
+        text-align: center;
+    }
+    .contact-image,.contact-form {
+        width: 90% !important;
+        margin: 1rem auto !important;
+        text-align: center;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-ar {
+        flex-wrap: nowrap;
+    }
+
     .frec {
         vertical-align: auto;
         padding: 5px;
