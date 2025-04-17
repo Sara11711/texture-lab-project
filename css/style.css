@@ -81,16 +81,14 @@ p {
     margin: 0px;
 }
 
-
-
-button {
+/*button {
     position: absolute;
     height: 60px;
     min-width: 300px;
     max-width: 35%;
     padding: 5px;
     margin-bottom: 20%;
-}
+}*/
 
 
 .div-button {
@@ -201,6 +199,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 
 /* main */
 
+
 /*grid*/
 
 /* Archive Grids */
@@ -237,19 +236,21 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 }
 
 
+/* filter by elements */
+/* https://www.w3schools.com/howto/howto_js_filter_elements.asp  Ayaka,Thank you! */
+
 /* index grids - grid generator */
 /* https://cssgridgenerator.io/  */
 .parent {
     display: grid;
     margin: 5%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 8px;
 }
     
 .div1 {
     grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
     /* background-color: #605C5A; */
 }
 .div1 img {
@@ -269,9 +270,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 }
 
 .div2 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-start: 1;
     /* background-color: #605C5A; */
 }
 .div2 img {
@@ -291,9 +291,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 }
 
 .div3 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 4;
-    grid-row-start: 1;
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
     /* background-color: #605C5A; */
 }
 .div3 img {
@@ -313,8 +313,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 }
 
 .div4 {
-    grid-row: span 2 / span 2;
-    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
     /* background-color: #605C5A; */
 }
 .div4 img {
@@ -334,8 +334,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 }
 
 .div5 {
-    grid-column-start: 2;
-    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-row-start: 2;
     /* background-color: #605C5A; */
 }
 .div5 img {
@@ -362,6 +362,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    background-color: #F5F8F8;
+    border-radius: 15px;
 }
 
 /* end grids */        
@@ -432,6 +440,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  .container-flex-text {
+    margin: 0 5%;
   }
   
 

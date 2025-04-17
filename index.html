@@ -34,34 +34,34 @@
         
         <!-- grid-->
         <div class="parent">
-            <div class="div1">
+            <div class="div1 filterDiv scanner">
                 <a href="">
                     <img src="image\Scanner- duotone.png" alt="" style=" max-width: 80%;"> 
-                    <h2>Experiments <br> Using <br> Scanner</h2> 
+                    <h2  data-filter="scanner">Experiments <br> Using <br> Scanner</h2> 
                 </a>
             </div>
-            <div class="div3">
+            <div class="div2 filterDiv clay">
                 <a href="">
                     <img src="image\Clay - Duotone.png" alt="">
-                    <h2 style="margin-top: 0px;">Experiments <br> Using <br> Clay</h2>
+                    <h2 data-filter="clay">Experiments <br> Using <br> Clay</h2>
                 </a>
             </div>
-            <div class="div2">
+            <div class="div3 filterDiv acrylic">
                 <a href="">
                     <img src="image\Acrylic- Duotone.png" alt=""> 
-                    <h2 style="margin-top: 0;">Experiments <br> Using <br> Acrylic Paint</h2>
+                    <h2 data-filter="acrylic">Experiments <br> Using <br> Acrylic Paint</h2>
                 </a>
             </div>
-            <div class="div4">
-                <a href="">
-                    <img src="image\Camera - Duotone.png" alt="">
-                    <h2 style="padding-left: 10px;">Experiments <br> Using <br> Camera</h2>
-                </a>
-            </div>
-            <div class="div5">
+            <div class="div4 filterDiv brayer">
                 <a href="">
                     <img src="image\Brayer-Duotone.png" alt="">
-                    <h2 style="margin-top: 5%;">Experiments <br> Using <br> Brayer</h2>
+                    <h2 data-filter="brayer">Experiments <br> Using <br> Brayer</h2>
+                </a>
+            </div>
+            <div class="div5 filterDiv camera">
+                <a href="">
+                    <img src="image\Camera - Duotone.png" alt="">
+                    <h2 data-filter="camera">Experiments <br> Using <br> Camera</h2>
                 </a>
             </div>
             <div class="div6">
@@ -71,7 +71,7 @@
         
         <!--containers-->
         <div class="container-flex">
-            <div>
+            <div class="container-flex-text">
                 <h2> Analogue Experiments </h2>
                 <p style="margin-bottom: 2%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae similique mollitia error reiciendis nostrum eveniet culpa blanditiis, eius, praesentium odio molestiae ipsam minima suscipit? Eos maxime aliquid vitae molestiae!</p>
                 <div class="div-button">
@@ -88,7 +88,7 @@
             <div>
                 <img src="image\de-index-ratio.jpg" alt="">
             </div>
-            <div>
+            <div class="container-flex-text">
                 <h2> Digital Experiments </h2>
                 <p style="margin-bottom: 2%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae similique mollitia error reiciendis nostrum eveniet culpa blanditiis, eius, praesentium odio molestiae ipsam minima suscipit? Eos maxime aliquid vitae molestiae!</p>
                 <div class="div-button">
@@ -99,7 +99,7 @@
         </div>
 
         <div class="container-flex">
-            <div>
+            <div class="container-flex-text">
                 <h2> Archive </h2>
                 <p style="margin-bottom: 2%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae similique mollitia error reiciendis nostrum eveniet culpa blanditiis, eius, praesentium odio molestiae ipsam minima suscipit? Eos maxime aliquid vitae molestiae!</p>
                 <div class="div-button" >
@@ -126,6 +126,30 @@
             <img src="image\footer alt 02.jpg" alt="" class="fimg">
         </div>
     </footer>
+
+    <script>
+        function filterSelection(category) {
+          const items = document.getElementsByClassName("filterDiv");
+          for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            if (category === "all" || item.classList.contains(category)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          }
+        }
+      
+        // Attach click listeners to each <h2>
+        const headings = document.querySelectorAll(".filterDiv h2[data-filter]");
+        headings.forEach(h2 => {
+          h2.style.cursor = "pointer";
+          h2.addEventListener("click", () => {
+            const category = h2.getAttribute("data-filter");
+            filterSelection(category);
+          });
+        });
+      </script>
     
 </body>
 </html>
