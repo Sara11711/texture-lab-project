@@ -239,6 +239,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 .parent {
     display: grid;
     margin: 5%;
+    margin-bottom: 2%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 8px;
@@ -463,7 +464,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     font-size: 2rem;
     cursor: pointer;
     margin-top: 1.2rem;
-    transition: background-color 0.3s ease;
 }
   
 .contact-form button:hover {
@@ -644,10 +644,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     z-index: 20;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.8rem;
     position: absolute;
     padding: .75rem;
     left: 0;
@@ -709,7 +709,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         text-align: center;
     }
     h3 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     .input-field-h3 {
         font-size: 0.9rem;
@@ -727,6 +727,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         font-size: 1rem;
         padding: 0px;
         margin: 0px;
+    }
+    .nav li{
+        margin-left: 1.3rem;
     }
 
     .frec span {
@@ -816,7 +819,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         text-align: center;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     p {
@@ -828,16 +831,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         padding: 0px;
         margin: 0px;
     }
+    .nav li{
+        margin-left: 1.35rem;
+    }
 
     .frec span {
         font-size: 1.2rem;
     }
 
-    button {
-        height: 43px;
-        min-width: 215px;
-        padding: .5rem;
-    }
     .container-flex {
         flex-direction: column;
         flex-wrap: wrap;
@@ -931,7 +932,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         margin: 0px;
     }
     .nav li{
-        margin-left: 1.5rem;
+        margin-left: 1.85rem;
     }
 
     .frec span {
