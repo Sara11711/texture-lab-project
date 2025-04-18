@@ -35,7 +35,7 @@ h1 {
     font-family: "chelsea-market";
     background-color: transparent;
     color: #353130;
-    font-size: 6.5rem;
+    font-size: 7.1rem;
     text-transform: uppercase;
     text-align: right;
     margin: 1.5rem;
@@ -360,13 +360,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     padding-right: 20px;
 }
 
-.div7 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 3;
-    background-color: #F5F8F8;
-    border-radius: 15px;
-}
 
 /* end grids */        
 
@@ -401,22 +394,22 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     max-width: 100%;
     padding: 2rem;
     gap: 2rem;
-  }
-  
-  .container-flex > div {
-    flex: 1 1 50%;
-    padding: 0;
-  }
-  
-  .container-flex > div img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+}
 
-  .container-flex-text {
-    margin: 0 5%;
-  }
+.container-flex > div {
+flex: 1 1 50%;
+padding: 0;
+}
+
+.container-flex > div img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.container-flex-text {
+margin: 0 5%;
+}
   
 
 /* about me page */
@@ -563,49 +556,48 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 }
 
 
-
-
-.tut-top {
+.tutorial-ribbon {
     position: relative;
     width: 100%;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    overflow: hidden;
+    margin: 5% 0;
 }
-
-.tut-top img {
+  
+  .tutorial-ribbon img {
     width: 100%;
+    height: auto;
     display: block;
 }
-
-.tut-top h2{
+  
+  .tutorial-caption {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 4;
-    color: #353130;
-    padding: 10px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "alumni-sans";
+    font-size: 2.5rem;
     text-align: center;
+    margin: 0;
+    padding: 0 1rem;
+    z-index: 2;
+    white-space: nowrap;
 }
+  
 
 .container-flex-tut {
     background-color: #F5F8F8;
     display: flex;
     flex-direction: row;
     position: relative;
-    margin: 8%;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin: 8% 0;
     max-width: 100%;
-    /*border:#cc1078 solid 2px;*/
     padding: 1rem;
-    min-height: 400px;
-    max-height: 30%;
+    height: auto;
 }
 
 .container-flex-tut div{
-    /*border:#cc1078 solid 2px;*/
-    vertical-align: middle;
+    vertical-align: auto;
     max-height: 20%;
     margin-left:10%;
     padding-top: 0%;
@@ -615,7 +607,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     vertical-align: middle;
     width: 100%;
 }
-.container-flex-tut div h1 {
+.container-flex-tut div h2 {
+    font-family: "chelsea-market";
+    font-size: 4.5rem;
     text-align: left;
     margin-left: 2%;
     margin-top: auto;
@@ -626,7 +620,54 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     transform: none;
 }
 
+.tutorial-intro,.tutorial-tools {
+  width: 45%;
+  margin: 2% 5%;
+}
 
+.tut-step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F8F8;
+    margin: 4% auto;
+    max-width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+}
+  
+.tut-img {
+flex: 1 1 50%;
+}
+
+.tut-img img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.tut-text {
+flex: 1 1 50%;
+display: flex;
+flex-direction: column;
+justify-content: left;
+margin: 0 5%;
+}
+
+.tut-text h2 {
+font-family: "chelsea-market";
+text-align: left;    
+font-size: 4.5rem;
+margin-bottom: 0.5rem;
+}
+
+.filter-intro-text {
+    color: #bf754b;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 20px ;
+}
 
 
 
@@ -677,12 +718,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     text-decoration: underline dotted;
 }
 
-/* https://www.w3schools.com/css/css_link.asp */
-.frec p:active{
-    color: #bf754b;
-    text-decoration: underline solid;
-}
-
 .fimg{
     position: relative;
     object-fit: contain;
@@ -701,7 +736,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
 
  @media screen and (max-width: 600px){
     h1 {
-        font-size: 3rem;
+        font-size: 3.4rem;
     }
     h2 {
         font-size: 2rem;
@@ -727,6 +762,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         padding: 0px;
         margin: 0px;
     }
+
+    .filter-intro-text {
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 4px ;
+    }
+    
     .nav li{
         margin-left: 1.3rem;
     }
@@ -741,7 +783,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         align-items: center;
         justify-content: center;
         margin: 2%;
-        text-align: center;
+        text-align: left;
     }
     .container-flex h2 {
         text-align: center;
@@ -751,13 +793,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     .about-image,.about-text {
         width: 90% !important;
         margin: 1rem auto !important;
-        text-align: center;
+        text-align: left;
     }
 
     .contact-image,.contact-form {
         width: 90% !important;
         margin: 1rem auto !important;
-        text-align: center;
+        text-align: left;
     }
 
     .contact-form form {
@@ -784,11 +826,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         max-width: 100%;
     }
 
-    .div6 {
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .div-button span {
         font-size: 1rem;
     }
@@ -805,13 +842,46 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     .lab-card img {
         height: 20%;
     }
+    .container-flex-tut {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-flex-tut div{
+        width: 80%;
+    }
+    
+    .tut-step {
+        flex-direction: column;
+    }
+    .tut-text , .tut-img{
+        max-width: 80%;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        margin: 4%;
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .div6 {
+        order: -1; 
+        padding: 1rem;
+    }
+
+
 
 } 
 
 
 @media screen and (max-width: 800px) and (min-width: 601px){
     h1 {
-        font-size: 3rem;
+        font-size: 3.45rem;
     }
     h2 {
         font-size: 2rem;
@@ -826,9 +896,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         background-color: transparent;
         font-family: "ysabeau-infant";
         line-height: 1.8;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0px;
         margin: 0px;
+    }
+
+    
+    .filter-intro-text {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 4px ;
     }
     .nav li{
         margin-left: 1.35rem;
@@ -845,21 +922,21 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         align-items: center;
         justify-content: center;
         margin: 2%;
-        text-align: center;
+        text-align: left;
     }
     .container-flex h2 {
-        text-align: center;
+        text-align: left;
     }
     
     .about-image,.about-text {
         width: 90% !important;
         margin: 1rem auto !important;
-        text-align: center;
+        text-align: left;
     }
     .contact-image,.contact-form {
         width: 90% !important;
         margin: 1rem auto !important;
-        text-align: center;
+        text-align: left;
     }
 
     .contact-form form {
@@ -885,11 +962,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         max-width: 50%;
     }
 
-    .div6 {
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .div-button span {
         font-size: 1rem;
     }
@@ -906,12 +978,43 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     .lab-card img {
         height: 20%;
     }
+    .container-flex-tut {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-flex-tut div{
+        width: 80%;
+    }
+    .tut-step {
+        flex-direction: column;
+    }
+    .tut-text , .tut-img{
+        max-width: 80%;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        margin: 4%;
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .div6 {
+        order: -1; 
+        padding: 1rem;
+    }
+
 
 }
 
 @media screen and (max-width: 1200px) and (min-width: 801px){
     h1{
-        font-size: 4rem;
+        font-size: 4.4rem;
     }
     h2{
         font-size: 2rem;
@@ -929,6 +1032,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         font-size: 1.2rem;
         padding: 0px;
         margin: 0px;
+    }
+    .filter-intro-text {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 4px ;
     }
     .nav li{
         margin-left: 1.85rem;
@@ -952,12 +1060,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     .about-image,.about-text {
         width: 90% !important;
         margin: 1rem auto !important;
-        text-align: center;
+        text-align: left;
     }
     .contact-image,.contact-form {
         width: 90% !important;
         margin: 1rem auto !important;
-        text-align: center;
+        text-align: left;
     }
 
     .contact-form form {
@@ -970,12 +1078,38 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
         flex-wrap: nowrap;
     }
 
-    .div6 {
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .div-button p {
         font-size: 1rem;
     }
+    .container-flex-tut {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-flex-tut div{
+        width: 80%;
+    }
+    .tut-step {
+        flex-direction: column;
+    }
+    .tut-text , .tut-img{
+        max-width: 80%;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+        margin: 4%;
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .div6 {
+        order: -1; 
+        padding: 1rem;
+    }
+
 } 
