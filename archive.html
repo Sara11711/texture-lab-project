@@ -26,28 +26,72 @@
         <div class="item-lab1" style="margin: 5%; margin-bottom: 2%;"><h2>The Collection of Experiments</h2></div>
         <div class="ar-row">
             <div class="ar-column">
-                <a href="d1.html"><img src="image\texture-lab-02.jpg" alt=""><p> Title: Untitled <br> Technique: Digital <br> Tool: Scanner</p></a>
-                <img src="image\2024-03-11_224637 (2).jpg" alt="">
-                <img src="image\ar-index.jpg" alt="">
-                <a href="a1.html"><img src="image\photo_2025-01-29_20-54-10.jpg" alt=""><p> Title: Let's believe in the beginning of the cold season <br> Technique: Analogue <br> Medium: Decollage</p></a>
+                <div class="filterdiv scanner">
+                    <a href="d1.html">
+                        <img src="image\texture-lab-02.jpg" alt="">
+                        <p> Title: Craft & Technology <br> Technique: Digital <br> Tool: Scanner</p>
+                    </a>
+                </div>
+                <div class="filterdiv scanner">
+                    <img src="image\2024-03-11_224637 (2).jpg" alt="">
+                    <p> Title: Untitled <br> Technique: Digital <br> Tool: Scanner</p>
+                </div>
+                <div class="filterdiv brayer">
+                    <img src="image\ar-index.jpg" alt="">
+                    <p> Title: Untitled <br> Technique: Analogue <br> Tool: Brayer</p>
+                </div>
+                <div class="filterdiv acrylic">
+                    <a href="a1.html">
+                        <img src="image\photo_2025-01-29_20-54-10.jpg" alt="">
+                        <p> Title: Let's believe in the beginning of the cold season <br> Technique: Analogue <br> Medium: Decollage | Acrylic Paint</p>
+                    </a>
+                </div>
             </div>
             <div class="ar-column">
-                <img src="image\texture-lab-03.jpg" alt="">
-                <img src="image\de-index.jpg" alt="">
-                <img src="image\01_01.jpg" alt="">
+                <div class="filterdiv brayer">
+                    <img src="image\texture-lab-03.jpg" alt="">
+                    <p> Title: Untitled <br> Technique: Analogue <br> Tool: Brayer</p>
+                </div>
+                <div class="filterdiv scanner">
+                    <img src="image\de-index.jpg" alt="">
+                    <p> Title: Untitled <br> Technique: Digital <br> Tool: Scanner</p>
+                </div>
+                <div class="filterdiv clay">
+                    <img src="image\01_01.jpg" alt="">
+                    <p>Title: Craft & Technology <br> Technique:Analogue <br> Tool: Clay</p>
+                </div>
             </div>
             <div class="ar-column">
-                <img src="image\20240312_110740 B&W.jpg" alt="">
-                <img src="image\contact-us.jpg" alt="">
-                <img src="image\texture-lab-01.jpg" alt="">
-                <img src="image\Background.jpg" alt="">
+                <div class="filterdiv camera">
+                    <img src="image\20240312_110740 B&W.jpg" alt="">
+                    <p> Title: Untitled <br> Technique: Digital <br> Tool: Camera</p>
+                </div>
+                <div class="filterdiv brayer">
+                    <img src="image\contact-us.jpg" alt="">
+                    <p> Title: Sufi<br> Technique: Analogue <br> Tool: Gel Plate | Brayer</p>
+                </div>
+                <div class="filterdiv acrylic">
+                    <img src="image\texture-lab-01.jpg" alt="">
+                    <p> Title: One Window suffice me <br> Technique: Analogue <br> Medium: Acrylic Paint</p>
+                </div>
+                <div class="filterdiv acrylic">
+                    <img src="image\Background.jpg" alt="">
+                    <p> Title: Wild Puppies <br> Technique: Analogue <br> Medium: Acrylic Paint</p>
+                </div>    
             </div>
             <div class="ar-column">
-                <img src="image\Cropped - 20240312_110740 B&W Invert copy - Copy.jpg" alt="">
-                <img src="image\me-index.jpg" alt="">
-                <img src="image\Texture for presentation.png" alt="">
-         
-               
+                <div class="filterdiv camera">
+                    <img src="image\Cropped - 20240312_110740 B&W Invert copy - Copy.jpg" alt="">
+                    <p> Title: Untitled <br> Technique: Digital <br> Tool: Camera</p>
+                </div>
+                <div class="filterdiv acrylic">
+                    <img src="image\me-index.jpg" alt="">
+                    <p> Title: Birch Trees <br> Technique: Analogue <br> Medium: Gel Plate | Acrylic Paint</p>
+                </div>
+                <div class="filterdiv brayer">
+                    <img src="image\Texture for presentation.png" alt="">
+                    <p> Title: Untitled <br> Technique: Analogue <br> Tool: Brayer</p>
+                </div> 
             </div>
         </div>
 
@@ -66,6 +110,21 @@
             <img src="image\footer alt 02.jpg" alt="" class="fimg">
         </div>
     </footer>
+
+    <script>
+        const filter = window.location.hash.substring(1); 
+      
+        if (filter) {
+          const items = document.querySelectorAll('.filterdiv');
+          items.forEach(item => {
+            if (item.classList.contains(filter)) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        }
+      </script>
     
 </body>
 </html>

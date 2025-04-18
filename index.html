@@ -25,49 +25,58 @@
 
     <main>
 
-        <!--<div id="container-flex-intro">
-            <div>
-                <p> <b>Texture Lab</b> is a space for making, feeling, and experimenting.From hand-made textures to digital patterns, this is where I share my process—sometimes with tutorials, sometimes just the mess and magic of making.</p>
-            </div>
-           
-        </div> -->
-        
+
         <!-- grid-->
         <div class="parent">
-            <div class="div1 filterDiv scanner">
-                <a href="">
-                    <img src="image\Scanner- duotone.png" alt="" style=" max-width: 80%;"> 
-                    <h2  data-filter="scanner">Experiments <br> Using <br> Scanner</h2> 
+            <div class="div1">
+                <a href="archive.html#scanner">
+                    <div class="filterdiv scanner">
+                    <img src="image\Scanner- duotone.png" alt="">
+                    <h2>Experiments <br> Using <br> Scanner</h2>
+                    </div>
                 </a>
-            </div>
-            <div class="div2 filterDiv clay">
-                <a href="">
+                </div>
+                
+                <div class="div2">
+                <a href="archive.html#clay">
+                    <div class="filterdiv clay">
                     <img src="image\Clay - Duotone.png" alt="">
-                    <h2 data-filter="clay">Experiments <br> Using <br> Clay</h2>
+                    <h2>Experiments <br> Using <br> Clay</h2>
+                    </div>
                 </a>
-            </div>
-            <div class="div3 filterDiv acrylic">
-                <a href="">
-                    <img src="image\Acrylic- Duotone.png" alt=""> 
-                    <h2 data-filter="acrylic">Experiments <br> Using <br> Acrylic Paint</h2>
+                </div>
+                
+                <div class="div3">
+                <a href="archive.html#acrylic">
+                    <div class="filterdiv acrylic">
+                    <img src="image\Acrylic- Duotone.png" alt="">
+                    <h2>Experiments <br> Using <br> Acrylic Paint</h2>
+                    </div>
                 </a>
-            </div>
-            <div class="div4 filterDiv brayer">
-                <a href="">
+                </div>
+                
+                <div class="div4">
+                <a href="archive.html#brayer">
+                    <div class="filterdiv brayer">
                     <img src="image\Brayer-Duotone.png" alt="">
-                    <h2 data-filter="brayer">Experiments <br> Using <br> Brayer</h2>
+                    <h2>Experiments <br> Using <br> Brayer</h2>
+                    </div>
                 </a>
-            </div>
-            <div class="div5 filterDiv camera">
-                <a href="">
+                </div>
+                
+                <div class="div5">
+                <a href="archive.html#camera">
+                    <div class="filterdiv camera">
                     <img src="image\Camera - Duotone.png" alt="">
-                    <h2 data-filter="camera">Experiments <br> Using <br> Camera</h2>
+                    <h2>Experiments <br> Using <br> Camera</h2>
+                    </div>
                 </a>
+                </div>
+
+                <div class="div6">
+                        <p> <b>Texture Lab</b><br> is a space for making, feeling, and experimenting.<br>From hand-made textures to digital patterns, this is where I share my process—sometimes with tutorials, sometimes just the mess and magic of making.</p>
+                </div>
             </div>
-            <div class="div6">
-                    <p> <b>Texture Lab</b><br> is a space for making, feeling, and experimenting.<br>From hand-made textures to digital patterns, this is where I share my process—sometimes with tutorials, sometimes just the mess and magic of making.</p>
-            </div>
-        </div>
         
         <!--containers-->
         <div class="container-flex">
@@ -117,19 +126,19 @@
     <footer>
         <div class="fdiv">
             <div class="frec">
-                <ul>
-                    <li><a href="aboutus.html"><p>About Me</p></a></li>
-                    <li><a href="contactus.html"><p>Contact Me</p></a></li>
-                    <li><a href="faq.html"><p>FAQ</p></a></li>
-                </ul>
+                <a href="aboutus.html"><span>About Me</span></a>
+                <a href="archive.html"><span>Archive</span></a>
+                <a href="contactus.html"><span>Contact Me</span></a>
             </div>
-            <img src="image\footer alt 02.jpg" alt="" class="fimg">
+            <img src="image\footer alt 03.jpg" alt="" class="fimg">
         </div>
     </footer>
 
+    <!-- Thank you "Amir Astaneh" for helping me to make the filter -->
+
     <script>
         function filterSelection(category) {
-          const items = document.getElementsByClassName("filterDiv");
+          const items = document.getElementsByClassName("filterdiv");
           for (let i = 0; i < items.length; i++) {
             const item = items[i];
             if (category === "all" || item.classList.contains(category)) {
@@ -140,8 +149,7 @@
           }
         }
       
-        // Attach click listeners to each <h2>
-        const headings = document.querySelectorAll(".filterDiv h2[data-filter]");
+        const headings = document.querySelectorAll(".filterdiv h2[data-filter]");
         headings.forEach(h2 => {
           h2.style.cursor = "pointer";
           h2.addEventListener("click", () => {
