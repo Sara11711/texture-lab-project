@@ -668,9 +668,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="message"]:focus
     background-color: transparent;
     font-family:"ysabeau-infant";
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.4rem;
     margin: 0px; 
-    margin-left: 1rem;
 }
 
 .frec span:hover {
