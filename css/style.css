@@ -422,7 +422,6 @@ margin: 0 5%;
     padding-left: 5%;
     width: 60%;
     margin: auto 5%;
-    vertical-align: auto;
 }
 
 /* Contact me page */
@@ -597,7 +596,6 @@ margin: 0 5%;
 }
 
 .container-flex-tut div{
-    vertical-align: auto;
     max-height: 20%;
     margin-left:10%;
     padding-top: 0%;
